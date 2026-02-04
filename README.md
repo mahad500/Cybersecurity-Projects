@@ -6,7 +6,7 @@ This repository contains hands-on cybersecurity projects demonstrating practical
 ---
 
 ## About Me
-Aspiring Cybersecurity Analyst with:
+Aspiring Cybersecurity Analyst / SOC Analyst with:
 - 2+ years of IT Help Desk experience
 - CompTIA Security+
 - Microsoft AZ-900
