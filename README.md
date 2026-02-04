@@ -80,7 +80,7 @@ Analysis of network packets using Wireshark to detect malicious traffic and data
 
 ## Contact
 
-- LinkedIn: (Add your LinkedIn URL here)
+- LinkedIn: (www.linkedin.com/in/mahad-elyas500)
 - GitHub: (This repository)
 
 ---
