@@ -24,6 +24,20 @@
 - The Administrator account was breached as a result of these attempts.
 - By referencing both failed and successful login events in the analysis, we demonstrate the ability to correlate log data and identify the sequence of malicious activity without needing multiple screenshots.
 
+### Task 3 – User Management Events and Backdoor Account Detection
+
+**Screenshot:** `screenshots/03-backdoor-user.jpg`
+
+![Backdoor User Detection](screenshots/03-backdoor-user.jpg)
+
+**Description / Analysis:**
+- The screenshot shows Windows Event Viewer displaying a **4720 (user account created)** event for the backdoor account **svc_sysrestore**.
+- This account was created immediately after the successful RDP login from Task 2, as indicated by the matching **Logon ID**.
+- Additional events show that the backdoor user was added to the privileged groups: **Backup Operators** and **Remote Desktop Users**, granting it administrative and remote access capabilities.
+- This demonstrates that the attacker created a persistent backdoor account and assigned it privileges to maintain control over the system.
+- Correlating the Logon ID from the previous task confirms that the account creation is linked directly to the malicious session.
+
+
 
 
 
