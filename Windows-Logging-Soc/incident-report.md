@@ -37,6 +37,25 @@
 - This demonstrates that the attacker created a persistent backdoor account and assigned it privileges to maintain control over the system.
 - Correlating the Logon ID from the previous task confirms that the account creation is linked directly to the malicious session.
 
+### Task 4 – Malicious File Download and Execution (Sysmon Analysis)
+
+**Screenshot:** `screenshots/04-sysmon-malware-execution.jpg`
+
+![Sysmon Malware Execution](screenshots/04-sysmon-malware-execution.jpg)
+
+**Description / Analysis:**
+- The screenshot shows a **Sysmon Event ID 1 (Process Creation)** log for the execution of **ckjg.exe**.
+- The process was launched from the directory:  
+  `C:\Users\sarah.miller\Downloads\ckjg.exe`, indicating it was downloaded from the internet.
+- The parent process and command line fields indicate that the file was opened through **Google Chrome**, confirming the browser used.
+- Additional Sysmon network events revealed that the file was downloaded from:  
+  `http://gettsveriff.com/bgj3/ckjg.exe`.
+- The Logon ID matches Sarah’s session, linking this activity directly to the compromised user account.
+- This confirms that the attacker gained access by tricking the user into downloading and executing a malicious file.
+- This activity likely enabled further lateral movement and brute-force attacks against production servers.
+
+
+
 
 
 
