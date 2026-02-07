@@ -17,12 +17,6 @@ This project documents my hands-on work with Windows event logs and Sysmon to an
 - PowerShell
 - TryHackMe Virtual Machine
 
-## Project Structure
-windows-logging-soc/
-├── README.md
-├── incident-report.md
-└── screenshots/
-
 ## Key Skills Demonstrated
 - Log analysis and filtering
 - Incident investigation
