@@ -14,7 +14,6 @@ This project documents my hands-on work with Windows event logs and Sysmon to an
 - Windows Event Viewer
 - Sysmon
 - Practice EVTX Log Files
-- PowerShell
 - TryHackMe Virtual Machine
 
 ## Key Skills Demonstrated
