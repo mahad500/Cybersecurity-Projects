@@ -58,6 +58,8 @@
 
 **Screenshot:** `screenshots/05-sysmon-persistence-c2-domain.jpg`
 
+![Malware Persistance](screenshots/05-sysmon-persistence-c2-domain.jpg)
+
 **Description / Analysis:**
 - This screenshot shows Sysmon logs indicating that malware created a persistence file in the Startup folder.
 - It also shows outbound network communication to a suspected command-and-control server (193.46.217.4:7777).
