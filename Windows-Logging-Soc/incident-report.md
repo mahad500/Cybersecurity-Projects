@@ -20,7 +20,7 @@
 **Description / Analysis:**
 - The screenshot displays Windows Event Viewer filtered for security logs, showing that the Administrator account login was successful (Event ID 4624).
 - The successful RDP login (Logon Type 10) is linked to Logon ID **0x183C36D**, confirming unauthorized access.
-- Prior to the successful login, multiple failed login attempts (Event ID 4625) from IP **10.10.53.248** indicate a brute force attack.
+- Prior to the successful login, multiple failed login attempts (Event ID 4625) from the same IP **10.10.53.248**, which indicate a brute force attack.
 - The Administrator account was breached as a result of these attempts.
 
 ### Task 3 – User Management Events and Backdoor Account Detection
