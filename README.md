@@ -28,7 +28,7 @@ Investigated Windows Security and Sysmon logs to detect brute-force attacks, una
 - Brute-Force Detection
 - Incident Reporting
 
-📁 Folder: `windows-logging-soc-project`
+📁 Folder: `windows-logging-Soc`
 
 ---
 
