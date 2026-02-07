@@ -54,6 +54,16 @@
 - This confirms that the attacker gained access by tricking the user into downloading and executing a malicious file.
 - This activity likely enabled further lateral movement and brute-force attacks against production servers.
 
+### Task 5 – Malware Persistence and C2 Communication
+
+**Screenshot:** `screenshots/05-sysmon-persistence-c2-domain.jpg`
+
+**Description / Analysis:**
+- This screenshot shows Sysmon logs indicating that malware created a persistence file in the Startup folder.
+- It also shows outbound network communication to a suspected command-and-control server (193.46.217.4:7777).
+- DNS logs reveal the domain hkfasfsafg.click associated with the malicious IP.
+- These activities confirm that the malware established persistence and attempted remote control.
+
 
 
 
