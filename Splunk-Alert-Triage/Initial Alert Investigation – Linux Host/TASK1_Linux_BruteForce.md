@@ -20,6 +20,16 @@ The activity occurred during normal business hours, which could initially make i
 
 This alert serves as the starting point of the investigation and provides key contextual information, including the affected system, source address, and time of occurrence, which guided further analysis.
 
+### Brute Force Attempts per User
+![Brute Force Attempts per User](screenshots/brute_force_user_attempts.jpg)
+
+This screenshot shows the results of analyzing Linux authentication logs in Splunk to identify login attempts per user. The query filtered events from the source IP `10.10.242.248` and extracted key fields such as `username`, `action` (Failed or Accepted), `src_ip`, and `hostname`.
+
+From the results, we can see that the `john.smith` account received **503 login attempts**, far exceeding other accounts. These attempts include both failed and successful logins, indicating persistent brute force activity.
+
+The high number of attempts concentrated on a single user confirms that `john.smith` was the primary target of the attack. Other users had minimal or no failed attempts, which helps distinguish legitimate login activity from malicious behavior.
+
+These failed login attempts occurred within approximately 5 minutes, indicating a highly aggressive and automated brute force attack rather than normal user behavior.
 
 
 
