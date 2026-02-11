@@ -40,6 +40,13 @@ This was confirmed by analyzing the Linux authentication logs in Splunk, which s
 
 Privilege escalation to root significantly increases the impact of the attack, as it enables the attacker to create new accounts, modify system configurations, or persist on the system undetected.
 
+### Persistence Account Created – system-utm
+![Persistence Account](screenshots/persistence_system_utm.jpg)
+
+This screenshot shows that the attacker created a new user account called **system-utm** to maintain persistent access on the Linux host `tryhackme-2404`.
+
+The account was identified by searching the Splunk logs with the following query: 'index=* "new user"'
+
 
 
 
