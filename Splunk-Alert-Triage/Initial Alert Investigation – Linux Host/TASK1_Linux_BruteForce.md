@@ -32,13 +32,13 @@ The high number of attempts concentrated on a single user confirms that `john.sm
 These failed login attempts occurred within approximately 5 minutes, indicating a highly aggressive and automated brute force attack rather than normal user behavior.
 
 ### Privilege Escalation to Root
-![Privilege_escalation](screesnhots/privilege_escalation.jpg)
+![Privilege_escalation](screenshots/privilege_escalation.jpg)
 
 This screenshot shows that after successfully logging in as `john.smith`, the attacker was able to escalate privileges to the **root** account.
 
 This was confirmed by analyzing the Linux authentication logs in Splunk, which show successful login events from the source IP and subsequent root-level activity. These events indicate that the attacker gained administrative access, allowing full control over the host `tryhackme-2404`.
 
-Privilege escalation to root significantly increases the impact of the attack, as it enables the attacker to create new accounts, modify system configurations, or persist on the system undetected. This finding highlights the severity of the incident and the need to escalate to Level 2 SOC analysts for further investigation.
+Privilege escalation to root significantly increases the impact of the attack, as it enables the attacker to create new accounts, modify system configurations, or persist on the system undetected.
 
 
 
