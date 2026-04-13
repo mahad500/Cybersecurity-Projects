@@ -32,7 +32,7 @@ Investigated Windows Security and Sysmon logs to detect brute-force attacks, una
 
 ---
 
-### 2. (Upcoming) SIEM Alert Triage
+### 2. SIEM Alert Triage
 **Description:**  
 Hands-on analysis of SIEM alerts and log correlation to investigate security incidents.
 
@@ -45,26 +45,12 @@ Hands-on analysis of SIEM alerts and log correlation to investigate security inc
 
 ---
 
-### 3. (Upcoming) Network Traffic Analysis
-**Description:**  
-Analysis of network packets using Wireshark to detect malicious traffic and data exfiltration.
-
-**Skills:**
-- Packet Analysis
-- Network Monitoring
-- Threat Detection
-
-📁 Folder: `network-traffic-analysis`
-
----
-
 ## Skills & Tools
 
 - Windows Event Viewer
 - Sysmon
 - TryHackMe Labs
 - SIEM Fundamentals
-- Wireshark
 - Incident Response
 - Threat Analysis
 
